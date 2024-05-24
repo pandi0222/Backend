@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 
 // routers
 // TODO: add your router below 👇
+app.get('/',(req,res)=>{
+    res.send("Welcome to my page")
+})
 app.get('/movie', (req,res) => {
     res.send("movies from server...")
 })
